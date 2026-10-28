@@ -98,3 +98,8 @@ main{display:block}
 .legal{max-width:1360px;margin:0 auto;padding:0 40px 96px;box-sizing:border-box}
 .legal .mono{margin:0}
 @media (max-width:700px){.legal{padding:0 16px 48px}.liens-pied{flex-direction:column;gap:16px!important}}
+.consentement{position:fixed;right:30px;bottom:72px;z-index:6;max-width:420px;display:grid;gap:16px;padding:24px;background:#fdf6f4;border:1px solid #5649e5;color:#5649e5;font-size:15px;line-height:1.5}
+.consentement p{margin:0}
+.consentement__actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn--discret{border-color:#5649e540}
+@media (max-width:700px){.consentement{left:16px;right:16px;bottom:16px;max-width:none}}
