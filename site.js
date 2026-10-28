@@ -6,12 +6,13 @@
   /* Menu derrière le + */
   var bouton = document.querySelector('.plus');
   var menu = document.getElementById('menu');
-  function fermer() { if (!menu) return; menu.classList.remove('ouvert'); bouton.classList.remove('ouvert'); bouton.setAttribute('aria-expanded', 'false'); }
+  function fermer() { if (!menu) return; menu.classList.remove('ouvert'); bouton.classList.remove('ouvert'); bouton.setAttribute('aria-expanded', 'false'); document.body.classList.remove('menu-ouvert'); }
   if (bouton && menu) {
     bouton.addEventListener('click', function () {
       var ouvert = menu.classList.toggle('ouvert');
       bouton.classList.toggle('ouvert', ouvert);
       bouton.setAttribute('aria-expanded', String(ouvert));
+      document.body.classList.toggle('menu-ouvert', ouvert);
     });
     menu.addEventListener('click', function (e) { if (e.target.closest('a')) fermer(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fermer(); });

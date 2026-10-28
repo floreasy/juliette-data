@@ -23,7 +23,7 @@ a{color:#5649e5}a:hover{color:#5649e5}
 .liste{margin:0;padding:0;list-style:none}
 .lien{color:#5649e5;text-decoration:none;background:linear-gradient(currentColor,currentColor) no-repeat 0 100%/0 1px;transition:background-size .2s cubic-bezier(.2,.7,.2,1)}
 .lien:hover{background-size:100% 1px}
-.btn{display:inline-block;border:1px solid currentColor;color:#5649e5;padding:10px 18px;text-decoration:none;font-family:"DM Mono",Menlo,monospace;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;transition:background-color .2s cubic-bezier(.2,.7,.2,1),color .2s cubic-bezier(.2,.7,.2,1)}
+.btn{display:inline-block;appearance:none;background:none;border:1px solid currentColor;color:#5649e5;font-family:"DM Mono",Menlo,monospace;cursor:pointer;padding:10px 18px;text-decoration:none;font-family:"DM Mono",Menlo,monospace;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;transition:background-color .2s cubic-bezier(.2,.7,.2,1),color .2s cubic-bezier(.2,.7,.2,1)}
 .btn:hover{background:#5649e5;color:#fff}
 .btn.inverse{color:#fff;border-color:#fff}
 .btn.inverse:hover{background:#fff;color:#5649e5}
@@ -103,3 +103,24 @@ main{display:block}
 .consentement__actions{display:flex;flex-wrap:wrap;gap:8px}
 .btn--discret{border-color:#5649e540}
 @media (max-width:700px){.consentement{left:16px;right:16px;bottom:16px;max-width:none}}
+
+/* Essai : menu plein écran sur mobile */
+@media (max-width:700px){
+.menu.ouvert{position:fixed;inset:0;z-index:5;padding:120px 16px 40px;text-align:left;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.menu.ouvert li{font-size:22px;line-height:1.6}
+.coin.hd{z-index:7}.coin.hg{z-index:7}
+body.menu-ouvert{overflow:hidden}
+}
+
+/* Essai : page Contact inversée (fond violet, texte beige) */
+body.inverse{background:#5649e5;color:#fdf6f4}
+body.inverse a,body.inverse .coin,body.inverse .plus,body.inverse .nom,body.inverse .menu,body.inverse .filtre{color:#fdf6f4}
+body.inverse .coin,body.inverse .menu{background:#5649e5}
+body.inverse .filet{border-color:#fdf6f466}
+body.inverse .btn{color:#fdf6f4}
+body.inverse .btn:hover{background:#fdf6f4;color:#5649e5}
+body.inverse .champ input,body.inverse .champ textarea{color:#fdf6f4;border-bottom-color:#fdf6f466}
+body.inverse .champ input:focus,body.inverse .champ textarea:focus{border-bottom-color:#fdf6f4}
+body.inverse .champ input::placeholder,body.inverse .champ textarea::placeholder{color:#fdf6f4a6}
+body.inverse .consentement{background:#5649e5;border-color:#fdf6f4}
+body.inverse .btn--discret{border-color:#fdf6f466}
