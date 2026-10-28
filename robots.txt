@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Aperçu avant mise en ligne : à remplacer par "Allow: /" et un sitemap au lancement sur juliettedata.fr
