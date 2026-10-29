@@ -124,3 +124,9 @@ body.inverse .champ input:focus,body.inverse .champ textarea:focus{border-bottom
 body.inverse .champ input::placeholder,body.inverse .champ textarea::placeholder{color:#fdf6f4a6}
 body.inverse .consentement{background:#5649e5;border-color:#fdf6f4}
 body.inverse .btn--discret{border-color:#fdf6f466}
+
+/* Retours Marie du 29/10 : signature centrée, coordonnées décalées sur Contact */
+.plein .centre{grid-column:3/span 8;text-align:center}
+.plein .centre .t2,.plein .centre .corps,.plein .centre .chapo{margin-left:auto;margin-right:auto}
+.coordonnees.decale{padding-left:40px}
+@media (max-width:700px){.plein .centre{grid-column:1/-1}.coordonnees.decale{padding-left:0}}
