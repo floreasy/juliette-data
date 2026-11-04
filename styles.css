@@ -141,18 +141,17 @@ body.inverse .btn--discret{border-color:#fdf6f466}
 
 /* Retours de Marie du 04/11, mobile uniquement :
    - tous les H1 à la taille de la page Références (44 px), surlignés violet, texte beige
+     (fond porté mot par mot : box-decoration-break était mal rendu par certains Safari iOS)
    - accueil : deuxième paragraphe à la taille du premier, en gras */
 @media (max-width:700px){
 .affiche,.affiche.long,.affiche.moyen{font-size:44px}
-h1.affiche{display:inline;color:#fdf6f4;background:linear-gradient(#5649e5,#5649e5) no-repeat 0 0/0% 100%;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 .16em;line-height:1.28;animation:surligne .5s cubic-bezier(.2,.7,.2,1) .1s forwards}
-body.inverse h1.affiche{color:#5649e5;background-image:linear-gradient(#fdf6f4,#fdf6f4)}
-h1.affiche.mots > span{animation-delay:calc(var(--i) * 40ms + 450ms)}
+h1.affiche{color:#fdf6f4;padding-left:.16em;line-height:1.28}
+h1.affiche > span{background:#5649e5;padding:0 .02em .05em;margin-bottom:-.05em;box-shadow:.14em 0 0 #5649e5,-.14em 0 0 #5649e5;line-height:1.28}
+body.inverse h1.affiche{color:#5649e5}
+body.inverse h1.affiche > span{background:#fdf6f4;box-shadow:.14em 0 0 #fdf6f4,-.14em 0 0 #fdf6f4}
 .chapo.second{font-size:17px;line-height:1.6;font-weight:600}
 }
-@keyframes surligne{to{background-size:100% 100%}}
-@media (max-width:700px) and (prefers-reduced-motion:reduce){
-h1.affiche{background-size:100% 100%}
-}
+
 
 /* Retours de Marie du 04/11 (16 h), toutes les versions */
 strong{font-weight:600}
