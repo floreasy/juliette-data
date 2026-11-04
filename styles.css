@@ -29,7 +29,7 @@ a{color:#5649e5}a:hover{color:#5649e5}
 .btn:hover{background:#5649e5;color:#fff}
 .btn.inverse{color:#fff;border-color:#fff}
 .btn.inverse:hover{background:#fff;color:#5649e5}
-.filtre{appearance:none;background:none;border:1px solid transparent;color:#5649e5;font-family:"DM Mono",Menlo,monospace;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;cursor:pointer;transition:background-color .2s cubic-bezier(.2,.7,.2,1),color .2s cubic-bezier(.2,.7,.2,1)}
+.filtre{appearance:none;background:none;border:1px solid #5649e5;color:#5649e5;font-family:"DM Mono",Menlo,monospace;font-size:12px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;cursor:pointer;transition:background-color .2s cubic-bezier(.2,.7,.2,1),color .2s cubic-bezier(.2,.7,.2,1)}
 .filtre:hover{border-color:#5649e5}
 .filtre.actif{background:#5649e5;color:#fff}
 .coin{position:fixed;z-index:5;font-size:14px;line-height:1.4;margin:0;background:#fdf6f4;padding:6px 10px}
@@ -92,7 +92,7 @@ a{color:#5649e5}a:hover{color:#5649e5}
 .carte[hidden]{display:none}
 .carte.entre{animation:entre .15s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 220ms)}
 .filtres{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.domaine{margin:16px 0 0;font-size:14px;line-height:1.5}
+.domaine{margin:4px 0 0;font-size:14px;line-height:1.5}
 #references{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px;row-gap:56px}
 .photo img{width:100%;height:auto;display:block}
 main{display:block}
@@ -153,3 +153,7 @@ h1.affiche.mots > span{animation-delay:calc(var(--i) * 40ms + 450ms)}
 @media (max-width:700px) and (prefers-reduced-motion:reduce){
 h1.affiche{background-size:100% 100%}
 }
+
+/* Retours de Marie du 04/11 (16 h), toutes les versions */
+strong{font-weight:600}
+.liste.axes li{font-weight:600}
