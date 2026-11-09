@@ -2,11 +2,12 @@
    - GA n'est chargé qu'après un « Accepter » explicite, et seulement sur le
      domaine en ligne ; le choix est gardé dans le navigateur (localStorage).
    - Le lien « Cookies » du pied de page (data-gestion-cookies) rouvre le choix.
-   - GA_ID : à renseigner quand la propriété GA4 existe (G-XXXXXXXXXX).
+   - GA_ID : flux juliettedata.fr de la propriété GA4 « juliette.data »
+     (563401828, compte Sites Coop).
    Styles du bandeau : .consentement dans styles.css. */
 (function () {
   'use strict';
-  var GA_ID = '';
+  var GA_ID = 'G-4SGS8Y1K9X';
   var HOTES_GA = ['juliettedata.fr', 'www.juliettedata.fr'];
   var HOTES_BANDEAU = HOTES_GA.concat(['floreasy.github.io', 'localhost', '127.0.0.1']);
   var EN_LIGNE = HOTES_GA.indexOf(location.hostname) >= 0 && /^G-[A-Z0-9]+$/.test(GA_ID);
